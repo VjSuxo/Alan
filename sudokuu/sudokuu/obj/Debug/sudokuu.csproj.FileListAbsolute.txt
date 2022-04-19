@@ -1,0 +1,10 @@
+H:\Alan\sudokuu\sudokuu\bin\Debug\sudokuu.exe.config
+H:\Alan\sudokuu\sudokuu\bin\Debug\sudokuu.exe
+H:\Alan\sudokuu\sudokuu\bin\Debug\sudokuu.pdb
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.csprojAssemblyReference.cache
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.Form1.resources
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.Properties.Resources.resources
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.csproj.GenerateResource.cache
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.csproj.CoreCompileInputs.cache
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.exe
+H:\Alan\sudokuu\sudokuu\obj\Debug\sudokuu.pdb

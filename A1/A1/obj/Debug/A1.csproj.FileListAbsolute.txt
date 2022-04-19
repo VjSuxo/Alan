@@ -1,0 +1,10 @@
+H:\Alan\A1\A1\bin\Debug\A1.exe.config
+H:\Alan\A1\A1\bin\Debug\A1.exe
+H:\Alan\A1\A1\bin\Debug\A1.pdb
+H:\Alan\A1\A1\obj\Debug\A1.csprojAssemblyReference.cache
+H:\Alan\A1\A1\obj\Debug\A1.Form1.resources
+H:\Alan\A1\A1\obj\Debug\A1.Properties.Resources.resources
+H:\Alan\A1\A1\obj\Debug\A1.csproj.GenerateResource.cache
+H:\Alan\A1\A1\obj\Debug\A1.csproj.CoreCompileInputs.cache
+H:\Alan\A1\A1\obj\Debug\A1.exe
+H:\Alan\A1\A1\obj\Debug\A1.pdb

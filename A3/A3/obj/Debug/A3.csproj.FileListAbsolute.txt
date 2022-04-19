@@ -1,0 +1,10 @@
+H:\Alan\A3\A3\bin\Debug\A3.exe.config
+H:\Alan\A3\A3\bin\Debug\A3.exe
+H:\Alan\A3\A3\bin\Debug\A3.pdb
+H:\Alan\A3\A3\obj\Debug\A3.csprojAssemblyReference.cache
+H:\Alan\A3\A3\obj\Debug\A3.Form1.resources
+H:\Alan\A3\A3\obj\Debug\A3.Properties.Resources.resources
+H:\Alan\A3\A3\obj\Debug\A3.csproj.GenerateResource.cache
+H:\Alan\A3\A3\obj\Debug\A3.csproj.CoreCompileInputs.cache
+H:\Alan\A3\A3\obj\Debug\A3.exe
+H:\Alan\A3\A3\obj\Debug\A3.pdb

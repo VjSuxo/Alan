@@ -1,0 +1,10 @@
+H:\Alan\A5\A5\bin\Debug\A5.exe.config
+H:\Alan\A5\A5\bin\Debug\A5.exe
+H:\Alan\A5\A5\bin\Debug\A5.pdb
+H:\Alan\A5\A5\obj\Debug\A5.csprojAssemblyReference.cache
+H:\Alan\A5\A5\obj\Debug\A5.Form1.resources
+H:\Alan\A5\A5\obj\Debug\A5.Properties.Resources.resources
+H:\Alan\A5\A5\obj\Debug\A5.csproj.GenerateResource.cache
+H:\Alan\A5\A5\obj\Debug\A5.csproj.CoreCompileInputs.cache
+H:\Alan\A5\A5\obj\Debug\A5.exe
+H:\Alan\A5\A5\obj\Debug\A5.pdb

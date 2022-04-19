@@ -1,0 +1,6 @@
+Begin
+costo = read()
+tiempo = read()
+total = costo*tiempo
+print(total)
+End
