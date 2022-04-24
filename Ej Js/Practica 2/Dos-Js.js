@@ -9,7 +9,7 @@ function obtenerArea(){
         b = b+x;
     }
     else{
-        
+        b = b*100;
     }
-    areaResultado.innerHTML = "No Puede votar ";
+    areaResultado.innerHTML = b;
    }
