@@ -1,0 +1,125 @@
+/* Google foont */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+/* === Global === */ 
+*{
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*  NavBar */ 
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: blanchedalmond;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/MiniMarket 2/Img/Img-Fondo.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.logo2 img{
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.general{
+    display: flex;
+    margin-top: 20%;
+    
+}
+
+.Contenedor{
+    border: 3px solid blue;
+    float: left;
+    width: 60%;
+    height: 500px;
+}
+
+.Contenedor #hexagon {
+    width:100px; 
+    height:50px; 
+    background:yellow; 
+    position: relative;
+    margin: auto;
+    margin-top: 40%;
+    }
+.Contenedor     #hexagon:before {
+         content:""; 
+         position:absolute;
+         top:-25px; 
+         left:0; 
+         width:0; 
+         height:0; 
+         border-left:50px solid transparent; 
+         border-right:50px solid transparent; 
+         border-bottom:25px solid yellow;
+        } 
+        .Contenedor #hexagon:after {content:""; 
+            position:absolute; 
+            bottom:-25px; 
+            left:0; width:0; 
+            height:0; 
+            border-left:50px solid transparent; 
+            border-right:50px solid transparent; 
+            border-top:25px solid yellow;
+        } 
+
+.general h1{
+    background-color: yellow;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
