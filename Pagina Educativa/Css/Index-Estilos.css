@@ -1,158 +1,82 @@
-/* Google foont */
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
-
-/* === Global === */ 
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+@import url(/Css/Menu.css);
 *{
-    background-color: black;
-    color: blanchedalmond;
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Homenaje', sans-serif;
+}
 
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-.active{
-    color: #fc036b;
-    text-decoration: underline;
-    font-weight: bold;
-}
-/*  NavBar */ 
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    color: blanchedalmond;
-
-}
-.nav-links{
-    display: flex;
-    align-items: center;
-}
-.nav-links li{
-    margin: 0 30px;
-}
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/MiniMarket 2/Img/Img-Fondo.jpg");
-    background-position: bottom;
+.main-header{
+    background: linear-gradient(rgba(68, 68, 68, 0.6), rgba(0,0,0,0.6) ), url(/Img/Fondo-F.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.header-content{
-    margin-bottom: 150px;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.header-content h2{
-    font-size: 4vmin;
-}
-
-.line{
-    width: 150px;
-    height: 4px;
-    background: #fc036b;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-.logo2 img{
-    width: 30%;
-    height: auto;
-    border-radius: 50px;
-}
-
-
-
-.Contenedor{
-    border: 3px solid blue;
-    float: left;
-    width: 60%;
-    height: 500px;
-}
-
-.Contenedor #hexagon {
-    width:100px; 
-    height:50px; 
-    background:yellow; 
+    height: 100vh;
     position: relative;
-    margin: auto;
-    margin-top: 40%;
-    }
-.Contenedor     #hexagon:before {
-         content:""; 
-         position:absolute;
-         top:-25px; 
-         left:0; 
-         width:0; 
-         height:0; 
-         border-left:50px solid transparent; 
-         border-right:50px solid transparent; 
-         border-bottom:25px solid yellow;
-        } 
-        .Contenedor #hexagon:after {content:""; 
-            position:absolute; 
-            bottom:-25px; 
-            left:0; width:0; 
-            height:0; 
-            border-left:50px solid transparent; 
-            border-right:50px solid transparent; 
-            border-top:25px solid yellow;
-        } 
-
-.general{
-    display: flex;
-    margin-top: 20%;
-    background-color: #FFCF02;
-    
-    
 }
 
-.general h1{
-    background-color: blue;
-    text-align: center;
-    font-size: 40px;
+.main-nav{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) );
+    display: flex;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+}
+
+ul{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+}
+ul li a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.3rem;
     color: white;
 }
 
-.general #hexagon {
-    width:100px; 
-    height:50px; 
-    background:blue; 
-    position: relative;
-    margin: auto;
-    margin-top: 40%;
-    }
-.general     #hexagon:before {
-         content:""; 
-         position:absolute;
-         top:-25px; 
-         left:0; 
-         width:0; 
-         height:0; 
-         border-left:50px solid transparent; 
-         border-right:50px solid transparent; 
-         border-bottom:25px solid blue;
-        } 
-        .general #hexagon:after {content:""; 
-            position:absolute; 
-            bottom:-25px; 
-            left:0; width:0; 
-            height:0; 
-            border-left:50px solid transparent; 
-            border-right:50px solid transparent; 
-            border-top:25px solid blue;
-        } 
+ul li a:hover{
+    background: blueviolet;
+}
+
+.content-header{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.content-header h1{
+    font-size: 7rem;
+    
+}
+.content-header p{
+    font-size: 3rem;
+    margin: 15px 50px;
+}
+
+.content-header a{
+    font-size: 1.3rem;
+    color: white;
+    display: inline-block;
+    padding: 15px 28px ;
+    background: blueviolet;
+}
+
+.content-header a:hover{
+    background: rgb(180, 129, 228);
+    border: 2px solid white;
+    padding: 13px 19px;
+}
