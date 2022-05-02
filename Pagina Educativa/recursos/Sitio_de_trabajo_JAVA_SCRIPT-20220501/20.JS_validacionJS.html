@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<script>
+		
+
+		function comenzar()
+		{
+			var usu=document.getElementById("usuario");
+			var pass=document.getElementById("password");
+	
+			usu.addEventListener("input",validarUsuario,false);
+			pass.addEventListener("input",validarPassword,false);
+
+			validarUsuario();
+			validarPassword();
+
+		}
+		function validarUsuario()
+		{
+			if (usuario.value=="")
+			{
+				usuario.setCustomValidity("Introduce USUARIO"); 
+				usuario.style.background="#FFDDDD";
+			}	
+			else
+			{
+				usuario.setCustomValidity("");
+				usuario.style.background="#FFFFFF";
+			}
+		}
+		function validarPassword()
+		{
+			if (password.value=="")
+			{
+				password.setCustomValidity("Introduce PASSWORD");
+				password.style.background="#FFDDDD";
+			}	
+			else
+			{
+				password.setCustomValidity("");
+				password.style.background="#FFFFFF";
+			}
+		}
+		
+		window.addEventListener("load",comenzar,false); /* al cargar la pagina llama  la funcion COMENZAR*/
+	</script>
+	<style>
+		table
+		{
+			text-align: center;
+			background-color: rgba(154,224,171,1.00);
+			width: 30%;
+			margin: auto; /* esto es para que lo centre automaticamente*/
+			border: 4px #2F51D4 dashed;
+		}
+		td
+		{
+			padding: 5px; /* 15 pixeles de separacion del contenido de las celdas (columnas)
+							15 pixeles de separacion a los 4 (cuatro) lados*/
+							
+		}
+	</style>
+	
+	
+</head>
+<body>
+	<section>
+		<form name="miRegistro" method="POSTt">
+			<table border="1">
+			    <tr>
+					<td colspan="2">REGISTRO</td>
+		        </tr>
+			    <tr>
+			      	<td><label>Introduzca Usuario:</label></td>
+			    	<td><input pattern="[A-Z]+" name="usuario" id="usuario"></td>
+		        </tr>
+			    <tr>
+			      	<td><label>Introduzca Password:</label></td>
+			    	<td><input pattern="[A-Za-z0-9]{6,}" name="password" id="password"></td>
+		        </tr>
+			    <tr>
+			      	<td colspan="2"><input type="submit" value="REGISTRAR"></td>
+		        </tr>
+		  </table>
+		</form>
+	</section>
+			 
+</body>
+</html>
