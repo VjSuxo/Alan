@@ -1,0 +1,20 @@
+<!doctype html>   <!-- version html 5-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQUERY</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+		$(document).ready(function()
+		{
+    		$('h1').html('modificacion del contenido usando la etiqueta H1');
+    		$('#etiquetah1').html('modificacion del contenido usando el ID');
+    		$('.claseh1').html('modificacion del contenido usando CLASS');
+			$('img').html('mi magenS');
+		});
+    </script>
+</head>
+<body>
+	<h1 id="etiquetah1" class="claseh1">TEXTO PREDEFINIDO <img src="../imagenes/cachorros.jpg" width="259" height="194"></h1>
+</body>
+</html>

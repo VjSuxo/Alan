@@ -7,6 +7,7 @@
     <title>Curso Js y Jq</title>
 
     <link rel="stylesheet" href="../Css/reset.css">
+    
     <link rel="stylesheet" href="../Css/JavaScript-Stilos.css">
 </head>
 <body>
@@ -45,30 +46,262 @@
  
 
 <section class="temas">
-    
-    <section  class="sec" id="Sintaxis">
+  <!-- SINTAXIS -->
+  <section  class="sec" id="Sintaxis">
+    <div class="titulo">
         <h1>Sintaxis</h1>
-    </section>
-    <section class="sec"  id="Tipodedatos">
-        <h1>Tipo de datos</h1>
-    </section>
-    <section  class="sec" id="Variables">
-        <h1>Variables</h1>
-    </section>
-    <section class="sec"  id="Concatenacion">
-        <h1>Concatenacion</h1>
-    </section>
-    <section class="sec"  id="Constantes">
-        <h1>Constantes</h1>
-    </section>
-    <section class="sec"  id="Entradadedatos">
-        <h1>Entrada de datos</h1>
-    </section>
-    <section class="sec"  id="Salidadedatos">
-        <h1>Salida de datos</h1>
-    </section>
+    </div>
+    <div class="Base">
+        <p class="texto-sub">La sintaxis de jQuery se basa en el objeto jQuery o $(). Este objeto tiene sus métodos, por lo que la forma más común sería la siguiente: $("selector"). metodo(argumentos);</p>
+    </div>
+    
+        
+        <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="Copiar texto"> 
+<script>
+                
+    $(document).ready(function()
+    {
+        alert("¡Hola Mundo!");		
+    });
+</script> 
+            </textarea>
+        </div>
+            <div class="Dos">
+                <p>Editor de codigo</p>
+                <textarea onkeyup="actualizar()" class="texto-ingresado"  id="texto-ingresado" placeholder=" INSERTAR CODIGO"> </textarea>
+            
+            </div>
+            <div class="Tres">
+                <p>Resultado</p>
+                <iframe class="editor" id="editor" srcdoc="" ></iframe>
+            </div>
+        </div>
+    
+</section>
+<!-- FIN SINTAXIS -->
+
+<!-- TIPO DE DATOS -->
+<section class="sec"  id="Tipodedatos">
+    <div class="titulo">
+        <h1> Tipo de datos</h1>
+    </div>
+    <div class="Base">
+        
+        <p class="texto-sub">una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. Ese espacio contiene una cantidad de información conocida o desconocida, es decir un valor.</p>
+    </div>
+    
+        
+        <div class="codigo">
+<div class="Uno">
+    <p>Editor de codigo</p>
+    <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+       <script>    
+           var edadUsuario=34;
+               var nombreUsuario="VICTOR EDUARDO";
+               var apellidoPaternoUsuario="RAMOS";
+               var apellidoMaternoUsuario="SANTOS";
+               
+               document.write(nombreUsuario);
+               document.write("<br>");
+               document.write(apellidoPaternoUsuario);
+               document.write("<br>");
+               document.write(apellidoMaternoUsuario);
+               document.write("<br>");
+               document.write(edadUsuario);
+                               
+       </script>
+                       </textarea>
+</div>
+            <div class="Dos">
+                <textarea onkeyup="actualizarA()" class="texto-ingresado"  id="texto-ingresado-A" placeholder=" INSERTAR CODIGO"> </textarea>
+            </div>
+            <div class="Tres">
+                <iframe class="editor" id="editor-A" srcdoc="" ></iframe>
+            </div>
+            
+        </div>
+    
+
+</section>
+<!-- FIN DE TIPO DE DATOS -->
+<!-- VARIABLES -->
+<section  class="sec" id="Variables">
+    <h1  class="titulo">Variables</h1>
+    <div class="Base">
+        <h1 class="sub-title">Que es sintaxis?</h1>
+        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+    </div>
+    
+        
+        <div class="codigo">
+            <div class="Uno">
+                <p>Editor de codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+          
+               <script>    
+                   //vamos a imprimir un texto en pantalla (HOLA MUNDO)
+                   document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
+                   document.write("<br>");
+                   document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
+                   document.write("empezamos con JAVA SCRIPT");
+                                       
+               </script>
+                               </textarea>
+            </div>
+            <div class="Dos">
+                <textarea onkeyup="actualizarB()" class="texto-ingresado"  id="texto-ingresado-B" placeholder=" INSERTAR CODIGO"> </textarea>
+            </div>
+            <div class="Tres">
+                <iframe class="editor" id="editor-B" srcdoc="Resultado" ></iframe>
+            </div>
+            
+        </div>
+    
+</section>
+<!-- FIN VARIABLES -->
+
+<!-- CONCATENACION -->
+<section class="sec"  id="Concatenacion">
+    <h1  class="titulo">Concatenacion</h1>
+    <div class="Base">
+        <h1 class="sub-title">Que es sintaxis?</h1>
+        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+    </div>
+    
+        
+        <div class="codigo">
+            <div class="Uno">
+
+                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+
+                    <script>    
+                        //vamos a imprimir un texto en pantalla (HOLA MUNDO)
+                        document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
+                        document.write("<br>");
+                        document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
+                        document.write("empezamos con JAVA SCRIPT");
+                                            
+                    </script>
+                                    </textarea>
+            </div>
+            <div class="Dos">
+                <textarea onkeyup="actualizarC()" class="texto-ingresado"  id="texto-ingresado-C" placeholder=" INSERTAR CODIGO"> </textarea>
+            </div>
+            <div class="Tres">
+                <iframe class="editor" id="editor-C" srcdoc="Resultado" ></iframe>
+            </div>
+            
+        </div>
+    
+</section>
+<!-- FIN CONCATENACION-->
+
+<!-- CONSTANTES -->
+<section class="sec"  id="Constantes">
+    <h1  class="titulo">Constantes</h1>
+    <div class="Base">
+        <h1 class="sub-title">Que es sintaxis?</h1>
+        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+    </div>
+    
+        
+        <div class="codigo">
+           <div class="Uno">
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+                Copiar este ejemplo de impresion por pantalla
+               
+               
+               
+               <script>    
+                   //vamos a imprimir un texto en pantalla (HOLA MUNDO)
+                   document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
+                   document.write("<br>");
+                   document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
+                   document.write("empezamos con JAVA SCRIPT");
+                                       
+               </script>
+                               </textarea>
+           </div>
+            <div class="Dos">
+                <textarea onkeyup="actualizarD()" class="texto-ingresado"  id="texto-ingresado-D" placeholder=" INSERTAR CODIGO"> </textarea>
+            </div>
+            <div class="Tres">
+                <iframe class="editor" id="editor-D" srcdoc="Resultado" ></iframe>
+            </div>
+        </div>
+    
+</section>
+<!-- FIN CONSTANTES -->
+
+<!-- ENTRADA DE DATOS -->
+<section class="sec"  id="Entradadedatos">
+    <h1  class="titulo">Entrada de datos</h1>
+    <div class="Base">
+        <h1 class="sub-title">Que es sintaxis?</h1>
+        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+    </div>
+    
+        
+        <div class="codigo">
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+Copiar este ejemplo de impresion por pantalla
+
+
+
+<script>    
+//vamos a imprimir un texto en pantalla (HOLA MUNDO)
+document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
+document.write("<br>");
+document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
+document.write("empezamos con JAVA SCRIPT");
+                    
+</script>
+            </textarea>
+            <textarea onkeyup="actualizarE()" class="texto-ingresado"  id="texto-ingresado-E" placeholder=" INSERTAR CODIGO"> </textarea>
+            <iframe class="editor" id="editor-E" srcdoc="Resultado" ></iframe>
+        </div>
+    
+</section>
+<!-- FIN ENTRADA DE DATOS-->
+
+<!-- SALIDA DE DATOS-->
+<section class="sec"  id="Salidadedatos">
+    <h1  class="titulo">Salida de datos</h1>
+    <div class="Base">
+        <h1 class="sub-title">Que es sintaxis?</h1>
+        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+    </div>
+    
+        
+        <div class="codigo">
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+Copiar este ejemplo de impresion por pantalla
+
+
+
+<script>    
+//vamos a imprimir un texto en pantalla (HOLA MUNDO)
+document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
+document.write("<br>");
+document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
+document.write("empezamos con JAVA SCRIPT");
+                    
+</script>
+            </textarea>
+            <textarea onkeyup="actualizarF()" class="texto-ingresado"  id="texto-ingresado-F" placeholder=" INSERTAR CODIGO"> </textarea>
+            <iframe class="editor" id="editor-F" srcdoc="Resultado" ></iframe>
+        </div>
+    
+</section>
+</section>
+<!-- FIN SALIDA DE DATOS-->
 </section>
 </body>
 <script src="/Js/menu.js"></script>
+<script src="/Js/editor.js"></script>
+<script src="libreriaJQuery/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqery/3.5.1/jqery.min.js"></script>
 </html>

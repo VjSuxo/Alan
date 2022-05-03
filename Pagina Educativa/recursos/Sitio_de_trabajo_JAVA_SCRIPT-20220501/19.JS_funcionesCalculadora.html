@@ -6,8 +6,8 @@
     <script>  
 		function suma(numero1, numero2)
 		{
-			
-			document.writeln("las suma es" );
+			var x = parseInt(numero1)+ parseInt(numero2);
+			document.writeln("las suma es"+x );
 		}
 		function rests(numero1, numero2)
 		{
@@ -30,11 +30,13 @@
 			document.writeln("las suma es" );
 		}
 		var operacion=prompt("que operacion desea realizar");
-		
+		var numero1=prompt("Ingrese primer valor");
+		var numero2=prompt("Ingrese segundo valor");
 		
 		if (operacion="suma")
 		{
 			suma (numero1,numero2);
+			
 		}
 		
     </script>

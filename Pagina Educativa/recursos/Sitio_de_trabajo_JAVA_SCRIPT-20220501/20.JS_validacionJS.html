@@ -16,24 +16,30 @@
 
 			validarUsuario();
 			validarPassword();
+			if(validarUsuario()){
+				alert("hola");
+			}
 
 		}
 		function validarUsuario()
 		{
-			if (usuario.value=="")
+			if (usuario=="GG")
 			{
+				
 				usuario.setCustomValidity("Introduce USUARIO"); 
 				usuario.style.background="#FFDDDD";
+				
 			}	
 			else
 			{
+				
 				usuario.setCustomValidity("");
 				usuario.style.background="#FFFFFF";
 			}
 		}
 		function validarPassword()
 		{
-			if (password.value=="")
+			if (password=="gg")
 			{
 				password.setCustomValidity("Introduce PASSWORD");
 				password.style.background="#FFDDDD";
@@ -79,7 +85,7 @@
 		        </tr>
 			    <tr>
 			      	<td><label>Introduzca Password:</label></td>
-			    	<td><input pattern="[A-Za-z0-9]{6,}" name="password" id="password"></td>
+			    	<td><input name="password" id="password"></td>
 		        </tr>
 			    <tr>
 			      	<td colspan="2"><input type="submit" value="REGISTRAR"></td>
