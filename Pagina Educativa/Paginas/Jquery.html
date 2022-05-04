@@ -43,265 +43,1003 @@
     </section>
 </header>
 
- 
-
+ <!-- TEMAS -->
 <section class="temas">
-  <!-- SINTAXIS -->
-  <section  class="sec" id="Sintaxis">
-    <div class="titulo">
-        <h1>Sintaxis</h1>
-    </div>
-    <div class="Base">
-        <p class="texto-sub">La sintaxis de jQuery se basa en el objeto jQuery o $(). Este objeto tiene sus métodos, por lo que la forma más común sería la siguiente: $("selector"). metodo(argumentos);</p>
-    </div>
-    
+    <!-- SINTAXIS -->
+    <section  class="sec" id="Sintaxis">
+        <div class="titulo">
+            <h1>Aparicion de imagen</h1>
+        </div>
+        <div class="Base">
+          
+            <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
+            <br>
+            <div class="ej">
+                <p> En el siguiente codigo modifique "Hola mundo"  por un Hola (tu nombre)</p>
+            </div>
+            
+        </div>
         
-        <div class="codigo">
-        <div class="Uno">
-            <p>Copie el codigo</p>
-            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="Copiar texto"> 
+            
+            <div class="codigo">
+            <div class="Uno">
+                <p>Copie el codigo</p>
+                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="Copiar texto"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-                
     $(document).ready(function()
     {
-        alert("¡Hola Mundo!");		
+        $("body").hide().fadeIn(7000); //7000 milisegundos
     });
-</script> 
-            </textarea>
+</script>
+<p align="center"><img src="../Img/Fondo-Jq.png" width="259" height="194"></p>
+
+                </textarea>
+            </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizar()" class="texto-ingresado"  id="texto-ingresado" placeholder=" INSERTAR CODIGO"> </textarea>
+                
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor" srcdoc="" ></iframe>
+                </div>
+            </div>
+        
+    </section>
+    <!-- FIN SINTAXIS -->
+
+    <!-- TIPO DE DATOS -->
+    <section class="sec"  id="Tipodedatos">
+        <div class="titulo">
+            <h1> Tipo de datos</h1>
         </div>
+        <div class="Base">
+            
+            <p class="texto-sub">JavaScript es un lenguaje de tipado débil o dinámico. Esto significa que no es necesario declarar el tipo de variable antes de usarla. <br> En los lenguajes de tipado dinámico como JavaScript o Phyton la comprobación de los tipos se realiza durante la ejecución del programa en vez de durante la compilación.</p>
+        </div>
+        <div class="ej">
+            <p>Empareja con el correcto</p>
+        </div>
+        <div class="container">
+            <div>
+                <ul class="draggable-list">
+                    <li id="e3" draggable="true">true</li>
+                    <li id="e1" draggable="true">Hola mundo</li>
+                    <li id="e2" draggable="true">3</li>                    
+                </ul>
+            </div>
+            <div>
+                <ul class="draggable-list">
+                    <li id="s1" draggable="true">string</li>
+                    <li id="s2" draggable="true">int</li>
+                    <li id="s3" draggable="true">boolean</li>
+                </ul>
+            </div> 
+        </div>
+
+            
+        <div id="endMessage">
+        
+            <button onclick="playAgain()">Play Again</button>
+          </div>
+
+    <!-- FIN DE TIPO DE DATOS -->
+    <!-- VARIABLES -->
+    <section  class="sec" id="Variables">
+        <h1  class="titulo">Variables</h1>
+        <div class="Base">
+            
+            <p class="texto-sub">Las variables son la manera como los programadores le dan nombre a un valor para poder reusarlo, actualizarlo o simplemente registrarlo. Las variables se pueden usar para guardar cualquier tipo de dato en JavaScript. </p>
+            <div class="ej">
+                <p> En el siguiente codigo modifique la edad, nombreUsuario,</p>
+            </div>
+        </div>
+        
+            
+            <div class="codigo">
+                <div class="Uno">
+                    <p>Copie el codigo</p>
+                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+              
+<script>    
+    var edadUsuario=34;
+    var nombreUsuario="VICTOR EDUARDO";
+                            
+    document.write(nombreUsuario);
+    document.write("<br>");
+    document.write(apellidoPaternoUsuario);
+    document.write("<br>");
+    document.write(apellidoMaternoUsuario);
+    document.write("<br>");
+    document.write(edadUsuario);
+                                                       
+</script>
+                                   </textarea>
+                </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizarA()" class="texto-ingresado"  id="texto-ingresado-A" placeholder=" INSERTAR CODIGO"> </textarea>
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor-A" srcdoc="Resultado" ></iframe>
+                </div>
+                
+            </div>
+        
+    </section>
+    <!-- FIN VARIABLES -->
+
+    <!-- CONCATENACION -->
+    <section class="sec"  id="Concatenacion">
+        <h1  class="titulo">Concatenacion</h1>
+        <div class="Base">
+            <p class="texto-sub"></p>
+        </div>
+        
+            
+            <div class="codigo">
+                <div class="Uno">
+                    <p>Copie el codigo</p>
+                    <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+<script>    
+    //introduccion a variables
+    var edadUsuario=34;
+    var nombreUsuario="VICTOR EDUARDO";
+    var apellidoPaternoUsuario="RAMOS";
+    var apellidoMaternoUsuario="SANTOS";
+                            
+    document.write("El nombre del usuario es: " + nombreUsuario + "<p> su apellido paterno es: " +apellidoPaternoUsuario+"<p> su apellido materno es " + apellidoMaternoUsuario + "<p> su edad es: " + edadUsuario);             
+</script>
+                        
+                                        </textarea>
+                </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizarB()" class="texto-ingresado"  id="texto-ingresado-B" placeholder=" INSERTAR CODIGO"> </textarea>
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor-B" srcdoc="Resultado" ></iframe>
+                </div>
+                
+            </div>
+        
+    </section>
+    <!-- FIN CONCATENACION-->
+
+    <!-- OPERADORES ARITMETICOS -->
+    <section class="sec"  id="OpA">
+        <h1  class="titulo">Operadores Aritmeticos</h1>
+        <div class="Base">
+            <p class="texto-sub"></p>
+        </div>
+        
+            
+            <div class="codigo">
+               <div class="Uno">
+                <p>Copie el codigo</p>
+                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">                 
+<script>    
+    //operadores aritmeticos
+    var numero1=50;
+    var numero2=7;
+                
+    //SUMA		
+    var resultadoSuma=numero1+numero2;
+    document.write(resultadoSuma);
+                        
+    numero1+=10; //numero1=numero1+10;
+    document.write("<br>"+numero1);
+    numero1-=10; //numero1=numero1-10;
+    document.write("<br>"+numero1);
+    numero1*=10; //numero1=numero1*10;
+    document.write("<br>"+numero1);
+    numero1/=10; 
+    document.write("<br>"+numero1);
+                        
+    numero2++; //numero2=numero2+1;
+    document.write("<br>"+numero2);
+    numero2--; //numero2=numero2-1;
+    document.write("<br>"+numero2);
+                        
+    numero2+= ++numero1; // numero2=numero2+(++numero1) // numero2=7+(51)=58
+    document.write("<br>"+numero2);
+    numero2+= numero1++; // numero2=numero2+(numero1++) // numero2=58+(51)=109
+    document.write("<br>"+numero2);         
+</script>
+                                   </textarea>
+               </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizarC()" class="texto-ingresado"  id="texto-ingresado-C" placeholder=" INSERTAR CODIGO"> </textarea>
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor-C" srcdoc="Resultado" ></iframe>
+                </div>
+            </div>
+        
+    </section>
+    <!-- FIN OP A -->
+
+    <!-- Alert -->
+    <section class="sec"  id="Alert">
+        <h1  class="titulo">Alert</h1>
+        <div class="Base">
+            <p class="texto-sub"></p>
+        </div>
+            <div class="codigo">
+                <div class="Uno">
+                    <p>Copie el codigo</p>
+                    <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+<script>    
+    //salida de datos alert
+    var numero1=10;
+    var numero2=5;
+                            
+    var resultadoSuma=numero1+numero2;
+    alert("El resultado de sumar: "+numero1+" + "+numero2+" es: "+resultadoSuma);
+    
+    alert(numero1*numero2+10);     //(10*5)+10=60
+    alert(numero1*(numero2+10));	//10*(15)=150
+    
+</script>
+                       
+                        </textarea>
+                </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizarD()" class="texto-ingresado"  id="texto-ingresado-D" placeholder=" INSERTAR CODIGO"> </textarea>
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor-D" srcdoc="Resultado" ></iframe>
+                </div>
+                
+            </div>
+        
+    </section>
+    <!-- FIN ALERT-->
+
+    <!-- Promt-->
+    <section class="sec"  id="promt">
+        <h1  class="titulo">Promt</h1>
+        <div class="Base">
+            <p class="texto-sub"></p>
+        </div>
+        
+            
+            <div class="codigo">
+                <div class="Uno">
+                    <p>Copie el codigo</p>
+                    <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+                    
+<script>    
+    //entrada de datos PROMPT (
+    // CONTIENE
+        //CAMPO DE TEXTO
+        //BOTON ACEPTAR
+        //BOTON CANCELAR
+    var nombreUsuario=prompt("INTRODUCE TU USUARIO");
+    var passwordUsuario=prompt("INTRODUCE TU PASSWORD");
+                            
+    document.write("Tu usuario es: "+nombreUsuario+"<br>"+"Tu password es: "+passwordUsuario);
+    alert("Tu usuario es: "+nombreUsuario+"\n"+"Tu password es: "+passwordUsuario);                            
+</script>
+                    
+                                       </textarea>
+                </div>
+                <div class="Dos">
+                    <p>Editor de codigo</p>
+                    <textarea onkeyup="actualizarE()" class="texto-ingresado"  id="texto-ingresado-E" placeholder=" INSERTAR CODIGO"> </textarea>
+                </div>
+                <div class="Tres">
+                    <p>Resultado</p>
+                    <iframe class="editor" id="editor-E" srcdoc="Resultado" ></iframe>
+                </div>
+                
+            </div>
+        
+    </section>
+
+
+<!-- FIN promt-->
+
+<!-- Var Ent y Sal datos-->
+   <section class="sec"  id="Entradadedatos">
+    <h1  class="titulo">Variables de Entrada y Salida de datos</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
+<script>    
+    //entrada de datos PROMPT (
+    // CONTIENE
+        //CAMPO DE TEXTO
+        //BOTON ACEPTAR
+        //BOTON CANCELAR
+    var edadUsuario=prompt("INTRODUCE TU EDAD");
+    var añoActual=2022; //constante
+            
+    var añoNacimiento=añoActual-edadUsuario;
+    document.write("tu naciste en el año: "+añoNacimiento);
+                    
+    alert ("tu naciste en el año: "+añoNacimiento);  
+</script>
+                               </textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarF()" class="texto-ingresado"  id="texto-ingresado-F" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-F" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->
+
+<!-- eventOnclk-->
+<section class="sec"  id="eventoONCLICK">
+    <h1  class="titulo">evento ONCLICK</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+    <script>    
+        //evento ONCLICK
+        // Realiza una instruccion determinada cuando hagamos un click o pulsemos
+            
+    </script>
+
+
+    <p onClick='alert("Estamos desarrollando eventos en JAVA SCRIPT\nBienvenido")' on>
+        PULSE PARA VER INFORMACION ADICIONAL
+    </p>
+    <!-- en html5 todas de etiquetas son de tipo BLOCK (ocupa el 100% del ancho del navegador)-->
+                
+
+                               </textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarG()" class="texto-ingresado"  id="texto-ingresado-G" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-G" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->
+
+<!-- eventOnclk extr-->
+<section class="sec"  id="eventoONCLICKExt">
+    <h1  class="titulo">evento ONCLICK Externo</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script src="../Js/javaScript.j">    
+</script>
+<p onClick='alert("Estamos desarrollando eventos en JAVA SCRIPT\nBienvenido")'>
+    PULSE PARA VER INFORMACION ADICIONAL
+</p>
+<!-- en html5 todas de etiquetas son de tipo BLOCK (ocupa el 100% del ancho del navegador)-->
+                               </textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarH()" class="texto-ingresado"  id="texto-ingresado-H" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-H" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->
+
+<!-- event On mouse-->
+<section class="sec"  id="eventoOnMouse">
+    <h1  class="titulo">evento On Mouse Over</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script src="../Js/javaScript.js">    
+</script>
+<p onMouseOver="alert('ESTE ES EL EVENTO\nONMUOSEOVER')">
+    PASE EL MOUSE EN ESTA AREA PARA VER INFORMACION ADICIONAL
+</p>
+<!-- en html5 todas de etiquetas son de tipo BLOCK (ocupa el 100% del ancho del navegador)-->
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarI()" class="texto-ingresado"  id="texto-ingresado-I" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-I" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->
+
+
+
+<!-- Funciones Eventos-->
+<section class="sec"  id="FunEven">
+    <h1  class="titulo">Funciones Eventos</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script src="../Js/javaScriptFunciones.js">    
+</script>
+<p onClick="ventana()">
+    PRESIONE EN ESTA AREA
+</p>
+<!-- en html5 todas de etiquetas son de tipo BLOCK (ocupa el 100% del ancho del navegador)-->
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarJ()" class="texto-ingresado"  id="texto-ingresado-J" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-J" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->      
+
+<!-- Formulario-->
+<section class="sec"  id="Form">
+    <h1  class="titulo">Formularios</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+
+<form name="formulario" method="post" action="">
+  <div align="center">
+    <table width="321" height="160" border="1">
+      <tr>
+        <td colspan="2">
+        	<div align="center">
+          		<h3>FORMULARIO REGISTRO</h3>
+        	</div>
+         </td>
+      </tr>
+      <tr>
+        <td><div align="right">NOMBRE:</div></td>
+        <td><label for="nombreUsuario" value?></label>
+        <input type="text"  name="nombreUsuario" id="nombreUsuario" placeholder="INTRODUCE TU NOMBRE" required autocomplete="on">
+        *</td>
+      </tr>
+      <tr>
+        <td><div align="right">EDAD:</div></td>
+        <td><label for="textfield2"></label>
+        <input type="text" name="edadUsuario" id="textfield2" autofocus></td>
+      </tr>
+      <tr>
+        <td><div align="right">TELEFONO:</div></td>
+        <td><label for="textfield3"></label>
+        <input type="text" name="telefonoUsuario" id="textfield3" required>
+        *</td>
+      </tr>
+      <tr>
+        <td colspan="2"><div align="center">
+          <p align="left">los campos con * son obligatorios</p>
+          <p>
+            <input type="submit" name="botonAceptar" id="botonAceptar" value="ACEPTAR">
+          </p>
+        </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarK()" class="texto-ingresado"  id="texto-ingresado-K" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-K" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->    
+
+
+ <!-- Condicional-->
+<section class="sec"  id="Cond">
+    <h1  class="titulo">Condicional</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>    
+    // algoritmo para verificar si soy mator de edad
+    // si es mayor a 18 años es mayor de edad
+    var edadUsuario=prompt("INTRODUZCA SU EDAD");
+                    
+    if (edadUsuario>=18 && edadUsuario!=0 || edadUsuario<200)
+    {
+        alert ("ERES MAYOR DE EDAD");
+    }
+    elseif
+    {
+        alert("ERES MENOR DE EDAD");
+    }                               
+</script>
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarL()" class="texto-ingresado"  id="texto-ingresado-L" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-L" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->         
+
+<!-- while-->
+<section class="sec"  id="while">
+    <h1  class="titulo">Bucle While</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>  
+    // vector de meses del año  
+    // el bucle while tiene la carcateristica de tener un contador manual
+     var mesesAño=["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE", "DICIEMBRE"];
+    var contarMeses=mesesAño.length;
+    var contadorManual=0;
+    while (contadorManual<contarMeses)
+    {
+        document.write("["+mesesAño[contadorManual]+"]");
+        contadorManual++; //contador=contador+1;      //contador+=1;
+    }
+</script>
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarM()" class="texto-ingresado"  id="texto-ingresado-M" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-M" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->  
+
+<!-- Do while-->
+<section class="sec"  id="Dwhile">
+    <h1  class="titulo">Bucle Do While</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>  
+    // vector de meses del año  
+    // el bucle Do while tiene la carcateristica de tener un contador manual
+    // generalmente sirve para validaciones
+     var mesesAño=["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE", "DICIEMBRE"];
+    var contarMeses=mesesAño.length;
+    var contadorManual=0;
+                    
+    do
+    {
+        document.write("["+mesesAño[contadorManual]+"]");
+        contadorManual++; //contador=contador+1;      //contador+=1;
+    }
+    while (contadorManual<contarMeses);
+</script>
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarN()" class="texto-ingresado"  id="texto-ingresado-N" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-N" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->  
+
+<!-- For -->
+<section class="sec"  id="For">
+    <h1  class="titulo">Bucle For</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>  
+
+    // vector de meses del año  
+    // el bucle for tiene la caracteristica de tener un contador automatico
+     var mesesAño=["ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE", "DICIEMBRE"];
+    var contarMeses=mesesAño.length;
+    
+    for (var i=0;i<contarMeses;i++)
+    {
+        document.write("[ "+mesesAño[i]+" ]");
+    }
+</script>
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarO()" class="texto-ingresado"  id="texto-ingresado-O" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-O" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN -->  
+
+<!-- Date -->
+<section class="sec"  id="Date">
+    <h1  class="titulo">Funciones Date</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>  
+    function funcionFechaActual()
+    {
+        var fecha=new Date();
+        document.write(fecha.toDateString());
+    }
+</script>
+<h2 align="center">PAGINA QUE MUESTRA LA FECHA ACTUAL
+    <p>La fecha actual es : 
+        <script>funcionFechaActual();</script>
+    </p>
+   </h2>
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarP()" class="texto-ingresado"  id="texto-ingresado-P" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-P" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN --> 
+
+<!-- Funciones Parametro -->
+<section class="sec"  id="funPar">
+    <h1  class="titulo">Funciones Parametros</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>  
+    function funcionMostrarNombre(usuario)
+		{
+			document.writeln(usuario);
+		}
+		var usuario=prompt("INTRODUCE TU NOMBRE");
+</script>
+<h2 align="center">INGRESO AL SISTEMA</h2>
+	<p align="left">Bienvenido al sistema usuario:
+    	<script>
+			funcionMostrarNombre(usuario);
+    	</script>
+	</p>
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarQ()" class="texto-ingresado"  id="texto-ingresado-Q" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-Q" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN --> 
+
+      <!-- Funciones Calculadora -->
+<section class="sec"  id="funCal">
+    <h1  class="titulo">Funciones Calculadora</h1>
+    <div class="Base">
+        <p class="texto-sub"></p>
+    </div>
+    <div class="codigo">
+        <div class="Uno">
+            <p>Copie el codigo</p>
+            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+                <script>  
+        function suma(numero1, numero2)
+		{
+			var x = parseInt(numero1)+ parseInt(numero2);
+			document.writeln("la suma es "+x );
+		}
+		function rests(numero1, numero2)
+		{
+			var x = parseInt(numero1)- parseInt(numero2);
+			document.writeln("la resta es "+x );
+		}
+		function multiplicacion(numero1, numero2)
+		{
+			var x = parseInt(numero1)* parseInt(numero2);
+			document.writeln("la multiplicacion es " +x);
+		}
+		function division(numero1, numero2)
+		{
+			var x = parseInt(numero1)/ parseInt(numero2);
+			document.writeln("la division es "+x );
+		}
+		function modulo(numero1, numero2)
+		{
+			var x = parseInt(numero1)% parseInt(numero2);
+			document.writeln("el modulo es "+x );
+		}
+		var operacion=prompt("que operacion desea realizar");
+		var numero1=prompt("Ingrese primer valor");
+		var numero2=prompt("Ingrese segundo valor");
+		
+		
+switch(operacion) {
+  case "suma":
+    suma(numero1,numero2);
+    break;
+  case "resta":
+    rests(numero1,numero2);
+    break;
+    case "multiplicacion":
+    multiplicacion(numero1,numero2);
+    break;
+    case "division":
+    division(numero1,numero2);
+    break;
+    case "modulo":
+    modulo(numero1,numero2);
+    break;
+  default:
+    // code block
+}
+                    
+                </script>          
+</p>
+
+</textarea>
+        </div>
+        <div class="Dos">
+            <p>Editor de codigo</p>
+            <textarea onkeyup="actualizarR()" class="texto-ingresado"  id="texto-ingresado-R" placeholder=" INSERTAR CODIGO"> </textarea>
+        </div>
+        <div class="Tres">
+            <p>Resultado</p>
+            <iframe class="editor" id="editor-R" srcdoc="Resultado" ></iframe>
+        </div>
+        
+    </div>
+   
+    </section>
+      <!-- FIN --> 
+
+      <!-- Funciones Validacion -->
+      <section class="sec"  id="funVal">
+        <h1  class="titulo">Funciones Validacion</h1>
+        <div class="Base">
+            <p class="texto-sub"></p>
+        </div>
+        <div class="codigo">
+            <div class="Uno">
+                <p>Copie el codigo</p>
+                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder="">     
+<script>
+		
+
+        function comenzar()
+		{
+			var usu=document.getElementById("usuario");
+			var pass=document.getElementById("password");
+	
+			usu.addEventListener("input",validarUsuario,false);
+			pass.addEventListener("input",validarPassword,false);
+
+			validarUsuario();
+			validarPassword();
+			if(validarUsuario()){
+				alert("hola");
+			}
+
+		}
+		function validarUsuario()
+		{
+			if (usuario=="GG")
+			{
+				
+				usuario.setCustomValidity("Introduce USUARIO"); 
+				usuario.style.background="#FFDDDD";
+				
+			}	
+			else
+			{
+				
+				usuario.setCustomValidity("");
+				usuario.style.background="#FFFFFF";
+			}
+		}
+		function validarPassword()
+		{
+			if (password=="gg")
+			{
+				password.setCustomValidity("Introduce PASSWORD");
+				password.style.background="#FFDDDD";
+			}	
+			else
+			{
+				password.setCustomValidity("");
+				password.style.background="#FFFFFF";
+			}
+		}
+		
+		window.addEventListener("load",comenzar,false); /* al cargar la pagina llama  la funcion COMENZAR*/
+	</script>
+<style>
+    table
+    {
+        text-align: center;
+        background-color: rgba(154,224,171,1.00);
+        width: 30%;
+        margin: auto; /* esto es para que lo centre automaticamente*/
+        border: 4px #2F51D4 dashed;
+    }
+    td
+    {
+        padding: 5px; /* 15 pixeles de separacion del contenido de las celdas (columnas)
+                        15 pixeles de separacion a los 4 (cuatro) lados*/
+                        
+    }
+</style>
+    <form name="miRegistro" method="POSTt">
+      <table border="1">
+          <tr>
+            <td colspan="2">REGISTRO</td>
+          </tr>
+          <tr>
+            <td><label>Introduzca Usuario:</label></td>
+            <td><input pattern="[A-Z]+" name="usuario" id="usuario"></td>
+          </tr>
+          <tr>
+            <td><label>Introduzca Password:</label></td>
+            <td><input pattern="[0-9]+" name="password" id="password"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="submit" value="REGISTRAR"></td>
+          </tr>
+    </table>
+     </form>     
+    
+    </textarea>
+            </div>
             <div class="Dos">
                 <p>Editor de codigo</p>
-                <textarea onkeyup="actualizar()" class="texto-ingresado"  id="texto-ingresado" placeholder=" INSERTAR CODIGO"> </textarea>
-            
+                <textarea onkeyup="actualizarS()" class="texto-ingresado"  id="texto-ingresado-S" placeholder=" INSERTAR CODIGO"> </textarea>
             </div>
             <div class="Tres">
                 <p>Resultado</p>
-                <iframe class="editor" id="editor" srcdoc="" ></iframe>
-            </div>
-        </div>
-    
-</section>
-<!-- FIN SINTAXIS -->
-
-<!-- TIPO DE DATOS -->
-<section class="sec"  id="Tipodedatos">
-    <div class="titulo">
-        <h1> Tipo de datos</h1>
-    </div>
-    <div class="Base">
-        
-        <p class="texto-sub">una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. Ese espacio contiene una cantidad de información conocida o desconocida, es decir un valor.</p>
-    </div>
-    
-        
-        <div class="codigo">
-<div class="Uno">
-    <p>Editor de codigo</p>
-    <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-       <script>    
-           var edadUsuario=34;
-               var nombreUsuario="VICTOR EDUARDO";
-               var apellidoPaternoUsuario="RAMOS";
-               var apellidoMaternoUsuario="SANTOS";
-               
-               document.write(nombreUsuario);
-               document.write("<br>");
-               document.write(apellidoPaternoUsuario);
-               document.write("<br>");
-               document.write(apellidoMaternoUsuario);
-               document.write("<br>");
-               document.write(edadUsuario);
-                               
-       </script>
-                       </textarea>
-</div>
-            <div class="Dos">
-                <textarea onkeyup="actualizarA()" class="texto-ingresado"  id="texto-ingresado-A" placeholder=" INSERTAR CODIGO"> </textarea>
-            </div>
-            <div class="Tres">
-                <iframe class="editor" id="editor-A" srcdoc="" ></iframe>
+                <iframe class="editor" id="editor-S" srcdoc="Resultado" ></iframe>
             </div>
             
         </div>
-    
+       
+        </section>
+          <!-- FIN --> 
+
 
 </section>
-<!-- FIN DE TIPO DE DATOS -->
-<!-- VARIABLES -->
-<section  class="sec" id="Variables">
-    <h1  class="titulo">Variables</h1>
-    <div class="Base">
-        <h1 class="sub-title">Que es sintaxis?</h1>
-        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
-    </div>
-    
-        
-        <div class="codigo">
-            <div class="Uno">
-                <p>Editor de codigo</p>
-            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-          
-               <script>    
-                   //vamos a imprimir un texto en pantalla (HOLA MUNDO)
-                   document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
-                   document.write("<br>");
-                   document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
-                   document.write("empezamos con JAVA SCRIPT");
-                                       
-               </script>
-                               </textarea>
-            </div>
-            <div class="Dos">
-                <textarea onkeyup="actualizarB()" class="texto-ingresado"  id="texto-ingresado-B" placeholder=" INSERTAR CODIGO"> </textarea>
-            </div>
-            <div class="Tres">
-                <iframe class="editor" id="editor-B" srcdoc="Resultado" ></iframe>
-            </div>
-            
-        </div>
-    
-</section>
-<!-- FIN VARIABLES -->
-
-<!-- CONCATENACION -->
-<section class="sec"  id="Concatenacion">
-    <h1  class="titulo">Concatenacion</h1>
-    <div class="Base">
-        <h1 class="sub-title">Que es sintaxis?</h1>
-        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
-    </div>
-    
-        
-        <div class="codigo">
-            <div class="Uno">
-
-                <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-
-                    <script>    
-                        //vamos a imprimir un texto en pantalla (HOLA MUNDO)
-                        document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
-                        document.write("<br>");
-                        document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
-                        document.write("empezamos con JAVA SCRIPT");
-                                            
-                    </script>
-                                    </textarea>
-            </div>
-            <div class="Dos">
-                <textarea onkeyup="actualizarC()" class="texto-ingresado"  id="texto-ingresado-C" placeholder=" INSERTAR CODIGO"> </textarea>
-            </div>
-            <div class="Tres">
-                <iframe class="editor" id="editor-C" srcdoc="Resultado" ></iframe>
-            </div>
-            
-        </div>
-    
-</section>
-<!-- FIN CONCATENACION-->
-
-<!-- CONSTANTES -->
-<section class="sec"  id="Constantes">
-    <h1  class="titulo">Constantes</h1>
-    <div class="Base">
-        <h1 class="sub-title">Que es sintaxis?</h1>
-        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
-    </div>
-    
-        
-        <div class="codigo">
-           <div class="Uno">
-            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-                Copiar este ejemplo de impresion por pantalla
-               
-               
-               
-               <script>    
-                   //vamos a imprimir un texto en pantalla (HOLA MUNDO)
-                   document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
-                   document.write("<br>");
-                   document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
-                   document.write("empezamos con JAVA SCRIPT");
-                                       
-               </script>
-                               </textarea>
-           </div>
-            <div class="Dos">
-                <textarea onkeyup="actualizarD()" class="texto-ingresado"  id="texto-ingresado-D" placeholder=" INSERTAR CODIGO"> </textarea>
-            </div>
-            <div class="Tres">
-                <iframe class="editor" id="editor-D" srcdoc="Resultado" ></iframe>
-            </div>
-        </div>
-    
-</section>
-<!-- FIN CONSTANTES -->
-
-<!-- ENTRADA DE DATOS -->
-<section class="sec"  id="Entradadedatos">
-    <h1  class="titulo">Entrada de datos</h1>
-    <div class="Base">
-        <h1 class="sub-title">Que es sintaxis?</h1>
-        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
-    </div>
-    
-        
-        <div class="codigo">
-            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-Copiar este ejemplo de impresion por pantalla
 
 
-
-<script>    
-//vamos a imprimir un texto en pantalla (HOLA MUNDO)
-document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
-document.write("<br>");
-document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
-document.write("empezamos con JAVA SCRIPT");
-                    
-</script>
-            </textarea>
-            <textarea onkeyup="actualizarE()" class="texto-ingresado"  id="texto-ingresado-E" placeholder=" INSERTAR CODIGO"> </textarea>
-            <iframe class="editor" id="editor-E" srcdoc="Resultado" ></iframe>
-        </div>
-    
-</section>
-<!-- FIN ENTRADA DE DATOS-->
-
-<!-- SALIDA DE DATOS-->
-<section class="sec"  id="Salidadedatos">
-    <h1  class="titulo">Salida de datos</h1>
-    <div class="Base">
-        <h1 class="sub-title">Que es sintaxis?</h1>
-        <p class="texto-sub">La sintaxis de un lenguaje de programación se define como el conjunto de reglas que deben seguirse al escribir el código fuente de los programas para considerarse como correctos para ese lenguaje de programación.</p>
-    </div>
-    
-        
-        <div class="codigo">
-            <textarea class="texto-ejemplo"  id="texto-ejemplo" placeholder=""> 
-Copiar este ejemplo de impresion por pantalla
-
-
-
-<script>    
-//vamos a imprimir un texto en pantalla (HOLA MUNDO)
-document.write("BUENOS DIAS ESTUDIANTES DE LA MATERIA DE DISEÑO WEB II");
-document.write("<br>");
-document.write("<br>");  // dos etiquetas <br> equivalen a la etiqueta <p>
-document.write("empezamos con JAVA SCRIPT");
-                    
-</script>
-            </textarea>
-            <textarea onkeyup="actualizarF()" class="texto-ingresado"  id="texto-ingresado-F" placeholder=" INSERTAR CODIGO"> </textarea>
-            <iframe class="editor" id="editor-F" srcdoc="Resultado" ></iframe>
-        </div>
-    
-</section>
-</section>
-<!-- FIN SALIDA DE DATOS-->
-</section>
 </body>
-<script src="/Js/menu.js"></script>
-<script src="/Js/editor.js"></script>
-<script src="libreriaJQuery/jquery-3.6.0.min.js"></script>
+<script src="../Js/menu.js"></script>
+<script src="../Js/editor.js"></script>
+<script src="../Js/Juego-Comparacion.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqery/3.5.1/jqery.min.js"></script>
+<footer>
+    <div class="contenedor">
+        <p class="copy">Alan &copy;2022 the Revelation</p>
+        <div class="sociales">
+            <a class="icon-facebook" href="#"></a>
+            <a class="icon-twitter" href="#"></a>
+            <a class="icon-instagram" href="#"></a>
+            <a class="icon-location" href="#"></a>
+        </div>
+    </div>
+</footer>
 </html>
