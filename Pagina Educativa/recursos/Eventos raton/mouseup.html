@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("div").mouseup(function(){
+    $(this).after("<p style='color:green;'>Boton del mouse soltado.</p>");
+  });
+  $("div").mousedown(function(){
+    $(this).after("<p style='color:purple;'>Boton del mouse presionado.</p>");
+  });
+});
+</script>
+</head>
+<body>
+
+<div>Presione y suelte el boton del mouse </div>
+
+</body>
+</html>

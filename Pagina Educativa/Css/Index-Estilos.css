@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Homenaje', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .main-header{
@@ -17,35 +18,34 @@ body{
     position: relative;
 }
 
-.main-nav{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) );
-    display: flex;
 
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    padding: 20px 40px;
-    font-size: 1.3rem;
-}
-
-ul{
+.main-nav ul{
     display: flex;
     margin-left: auto;
     margin-right: 100px;
+    margin-top: 10px;
+    text-decoration: none;
 }
-ul li a{
+.main-nav ul li a{
     display: inline-block;
     padding: 20px 40px;
     font-size: 1.3rem;
     color: white;
+    transition: all 0.5s ease;
+}
+.navegador ul li .dot::before,
+.navegador ul li .dot::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    display: block;
+    transition: .2s ease-out;
 }
 
-ul li a:hover{
-    background: blueviolet;
+.main-nav ul li a:hover{
+    background: linear-gradient(rgba(138, 43, 226, 0.3), rgba(138, 43, 226,0.3) );
+    
 }
 
 .content-header{
@@ -81,3 +81,32 @@ ul li a:hover{
 }
 
 
+footer .contenedor {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
